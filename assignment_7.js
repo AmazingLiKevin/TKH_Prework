@@ -18,16 +18,14 @@ function sortingName(array) {
   for (var i = 0; i < evenLetterNames.length; i++) {
     var temp = evenLetterNames[i].split('');
     temp[0] = 'b';
-    temp = temp.join('');
-    even_array.push(temp);
+    even_array.push(temp.join(''));
   }
 
   var odd_array = [];
   for (var i = 0; i < oddLetterNames.length; i++) {
     var temp = oddLetterNames[i].split('');
     temp[temp.length - 1] = 'c';
-    temp = temp.join('');
-    odd_array.push(temp);
+    odd_array.push(temp.join(''));
   }
 
   console.log(even_array);
